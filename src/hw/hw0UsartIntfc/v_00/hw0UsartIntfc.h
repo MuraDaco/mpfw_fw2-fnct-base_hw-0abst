@@ -50,6 +50,7 @@ class hw0UsartIntfc_t {
         virtual void    tx_eventEnd             (void)            = 0;
 
         // receive
+        virtual bool    rx_chkInterruptRaised   (void)            = 0;
         virtual bool    rx_chkError_overrun     (void)            = 0;
         virtual void    rx_eventBegin           (void)            = 0;
         virtual uint8_t rx_eventReceiveData     (void)            = 0;

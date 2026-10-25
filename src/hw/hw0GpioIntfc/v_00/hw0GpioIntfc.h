@@ -53,7 +53,7 @@ namespace hw0GpioIntfc_ns
             ,k_typePort_i2c
         };
 
-        enum k_modePort_t   {
+        enum k_modePort_t: uint8_t   {
              k_modePort_input
             ,k_modePort_output
             ,k_modePort_data

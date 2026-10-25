@@ -46,8 +46,6 @@ class hw0UsartRs485Params_t {
         virtual void    setRxEnablePin      (void)  = 0;
         virtual void    clrRxEnablePin      (void)  = 0;
 
-        void* g_params;
-
 };
 
 }   }   }   }   // fw2::fnct::base::hw

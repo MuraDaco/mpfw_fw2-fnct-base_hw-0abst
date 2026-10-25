@@ -35,8 +35,8 @@
 #include "hw0UsartIntfc.h"
 #include "hw0UsartRs485Params.h"
 
-#ifndef BASE_HW_0_CONFIG_USART_H
-#define BASE_HW_0_CONFIG_USART_H
+#ifndef BASE_HW_0_EMPTY_H
+#define BASE_HW_0_EMPTY_H
 
 namespace fw2 { namespace fnct { namespace base { namespace hw {
 
@@ -47,4 +47,4 @@ namespace fw2 { namespace fnct { namespace base { namespace hw {
 
 }   }   }   }   // fw2::fnct::base::hw
 
-#endif  // BASE_HW_0_CONFIG_USART_H
+#endif  // BASE_HW_0_EMPTY_H

@@ -77,7 +77,13 @@ class hw0GpioDgIntfc_t
         static uint32_t     pinRead         (uint8_t  p_port,      uint32_t p_pin)                      ;
         static void         pinWrite        (uint8_t  p_Port,      uint32_t p_pin, uint8_t p_status)    ;
 
-        virtual void        pinConfig       (uint8_t  p_Port,      uint8_t p_pin, gpio_config_struct_t& p_config)   = 0;
+        virtual uint32_t    pinRead         (void) {return 0;}                              ;
+        virtual void        pinWrite        ([[maybe_unused]] uint8_t p_status) {}          ;
+        virtual void        pinInit         (void) {}                                       ;
+        virtual void        pinInit_Step1   (void) {}                                       ;
+        virtual void        pinInit_Step2   (void) {}                                       ;
+
+        virtual void        pinConfig       ([[maybe_unused]] uint8_t  p_Port,      [[maybe_unused]] uint8_t p_pin, [[maybe_unused]] gpio_config_struct_t& p_config) {};
         virtual void        setHigh         (void)                                                                  = 0;
         virtual void        setLow          (void)                                                                  = 0;
         virtual void        tglPin          (void)                                                                  = 0;
